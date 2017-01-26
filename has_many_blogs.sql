@@ -24,6 +24,7 @@ CREATE TABLE posts (
   content TEXT NULL DEFAULT NULL,
   created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
   updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
+  users_id,
 );
 
 DROP TABLE IF EXISTS comments;
